@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import axios from 'axios'
 
+import * as Constants from '../GlobalConstants'
 import PageBar from './PageBar'
 import Confirm from './Confirm'
 
@@ -16,7 +17,7 @@ const TagList = () => {
         {id:5, name: 'tag5', type: 'C'},
     ]
 
-    const API_BASE = 'http://localhost:3003/'
+    const API_BASE = Constants.API_BASE
 
     const [currentPage, setCurrentPage] = useState(3)
     const [maxPage, setMaxPage] = useState(5)

@@ -5,11 +5,12 @@ import { Link } from 'react-router-dom'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { SortableContainer , arrayMove} from 'react-sortable-hoc'
 
+import * as Constants from '../GlobalConstants'
 import Confirm from './Confirm'
 import BlockCard from './BlockCard'
 
 const TagBlockList = (props) => {
-    const API_BASE = 'http://localhost:3003/'
+    const API_BASE = Constants.API_BASE
 
     const [blocks, setBlocks] = useState([])
     const [isOpen, setIsOpen] = useState(false)

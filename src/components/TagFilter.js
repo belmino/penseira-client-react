@@ -1,10 +1,11 @@
 import React,  {useState, useEffect} from 'react'
 import axios from 'axios'
 
+import * as Constants from '../GlobalConstants'
 import TagBlockList from './TagBlockList'
 
 const TagFilter = () => {
-    const API_BASE = 'http://localhost:3003/'
+    const API_BASE = Constants.API_BASE
 
     // const [keyWord, setKeyWord] = useState('')
     const [tags, setTags] = useState([])

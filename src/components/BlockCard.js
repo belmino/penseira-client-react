@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { SortableElement } from 'react-sortable-hoc'
 
+import * as Constants from '../GlobalConstants'
+
 const BlockCard = SortableElement((props) => {
 
-    const API_BASE = 'http://localhost:3003/'
+    const API_BASE = Constants.API_BASE
 
     const imgStyle = {
         width: "171px",

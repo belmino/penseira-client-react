@@ -12,7 +12,7 @@ import BlockCard from './BlockCard'
 import TagBlockList from './TagBlockList'
 
 const Page = () => {
-    const API_BASE = 'http://localhost:3003/'
+    const API_BASE = Constants.API_BASE
 
     const [blocks, setBlocks] = useState([])
     const [page, setPage] = useState({})

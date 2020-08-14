@@ -3,10 +3,11 @@ import { useParams } from 'react-router-dom'
 import axios from 'axios'
 import {Navbar, NavbarBrand, Nav, Container} from 'react-bootstrap'
 
+import * as Constants from '../GlobalConstants'
 import TagBlockList from './TagBlockList'
 
 const Page = () => {
-    const API_BASE = 'http://localhost:3003/'
+    const API_BASE = Constants.API_BASE
 
     const [page, setPage] = useState({})
     const [contexts, setContexts] = useState([])

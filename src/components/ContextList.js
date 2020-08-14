@@ -3,8 +3,10 @@ import axios from 'axios'
 import { Link } from 'react-router-dom'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
+import * as Constants from '../GlobalConstants'
+
 const ContextList = () => {
-    const API_BASE = 'http://localhost:3003/'
+    const API_BASE = Constants.API_BASE
 
     const [contexts, setContexts] = useState([])
 

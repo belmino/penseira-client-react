@@ -3,9 +3,11 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
 
+import * as Constants from '../GlobalConstants'
+
 const TagForm = (props) => {
 
-    const API_BASE = 'http://localhost:3003/'
+    const API_BASE = Constants.API_BASE
 
     const [tag, setTag] = useState({slug: '', title: '', type: 'C'})
 
